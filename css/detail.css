@@ -1,0 +1,197 @@
+.hd-banner{
+    width: 100%;
+    height: 50vh;
+    background:linear-gradient(rgba(207, 0, 0,0.7),rgba(0, 0, 0, 0.5)), url(../imgs/screen-0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+}
+.banner-title{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 400px;
+     color: #fff;
+     text-align: center;
+}
+.banner-title h2{
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.breadcrumb{  
+        text-align: center;     
+       background: transparent;
+        font-size: 18px;
+       position: absolute;
+        bottom: 0;
+       left: 50%;
+       transform: translateX(-50%);
+      
+}
+.inner-project{
+    padding: 40px 20px;
+    width: 100%;
+    background: #191a19;
+    color: #fff;
+}
+.project-details h2{
+     text-transform: uppercase;
+     font-size: 24px;
+     font-family: 'Abril Fatface', cursive;
+     margin-bottom: 10px;
+}
+.project-details p{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+.other-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.other-info .single{
+    text-align: left;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px 25px;
+    border-bottom: 0.5px solid #747272;
+    
+}
+.single h3{
+    font-size: 20px;
+    margin-bottom: 0;
+
+}
+.single  span{
+    float: left;
+    padding-right: 5px;
+    color: #ff5252;
+}
+.description{
+    margin-top: 20px;
+}
+.description h2{
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 800;
+}
+.description p{
+    line-height: 25px;
+
+}
+.rel-img{
+   width: 100%;
+   height: 280px;
+   position: relative;
+}
+.rel-img img{
+    width: 100%;
+    height: 100%;
+}
+.rel-overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   padding: 20px 0;
+   color: #fff;
+   z-index: 1;
+   text-align: center;
+   overflow: hidden;
+   display: none;
+}
+.rel-img:hover .rel-overlay{
+    display: block;
+}
+.rel-overlay h3{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 20px;
+    background-color: #000;
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: 'Abril Fatface', cursive;
+}
+.rel-overlay p{
+    text-align: center;
+    margin: 10px 0;
+    padding-bottom: 10px;
+}
+
+.rel-overlay a{
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top:30px;
+    position: relative;
+    z-index: 2;
+}
+.rel-overlay a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    background-color: #ff5252;
+    opacity: 0.5;
+    z-index: 1;
+    
+    
+}
+.rel-overlay a:hover{
+    color: #fff;
+}
+.rel-overlay a:hover::before{
+    transform: scaleX(1);
+    color: #000;
+    
+}
+.rel-info h5{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 0;
+}
+.rel-info p{
+    text-transform: capitalize;
+    font-weight: 500;
+    
+}
+.more-contact{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background: #ff5252;
+}
+.more-contact h4{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.more-contact p{
+    font-size: 18px;
+    font-weight: 500;
+}
+@media(max-width:748px){
+    .other-info .single{   
+        padding: 10px 40px;    
+        
+    }
+}
