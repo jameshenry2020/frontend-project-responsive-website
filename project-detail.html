@@ -241,8 +241,8 @@
     <script src="js/bootstrap.min.js"></script> 
     <script>
         window.addEventListener('scroll', function(){
-            var header=document.querySelector('.header-container');
-            header.classList.toggle('sticky', window.scrollY > 0);
+            var header=document.querySelector('.navbar');
+            header.classList.toggle('fixed-top', window.scrollY > 0);
            
         })
     </script>
