@@ -21,8 +21,7 @@ body{
     position: fixed; 
     z-index: 100000;
     top: 0;
-    transition: 0.3s;
-    
+    transition: 0.3s;    
 }
 .top-bar{
     width: 100%;
@@ -40,10 +39,7 @@ body{
     color: #fff;
     padding-left: 15px;
 }
-.nav-cont{
-    width: 90%;
-    
-}
+
 .navbar{
     background: #fff;
 }
@@ -52,6 +48,9 @@ body{
     font-family: 'Abril Fatface', cursive;
     padding: 10px 15px;
     font-weight: 900;
+}
+.navbar.fixed-top{
+    border-bottom: 2px solid #ff5252;
 }
 .navbar .navbar-nav{
     padding-right: 20px;
@@ -135,9 +134,7 @@ body{
     transform: rotate(360deg);
     color: #fff;
 }
-.header-container.sticky .top-bar{
-    display: none;
-}
+ 
 .header-container.sticky .top-contact{
     display: none;
 }
@@ -152,7 +149,6 @@ body{
     height: 100vh;
     overflow: hidden;
     background: #000;
-    margin-top: 22%;
     margin-bottom: 0;
     
    
@@ -174,9 +170,13 @@ body{
    
 }
 .slide-item{
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     opacity: 0;
     animation: imageSlider 31s infinite;
     
@@ -733,9 +733,7 @@ footer .col-sm-4 li{
         font-size: 28px;
         padding: 8px 10px;
     }
-    .nav-cont{
-        width: 100%;
-    }
+  
     .slide-item .slide-text{
         width: 80%;
         padding: 2rem
@@ -750,14 +748,11 @@ footer .col-sm-4 li{
     .slideshow{
         margin-top: 0;
     }
-    /*.slideshow.slide-height{
-        margin-top: 0;
-        transition: .3s;
-     }*/
+   
      .service-container{
          margin-bottom: 0;
          padding-bottom: 40px;
-         height: auto;
+         min-height: 100%;
         
      }
      .service-intro{
@@ -765,7 +760,7 @@ footer .col-sm-4 li{
      }
      .service{
          margin-top: 10px;
-         padding-bottom: 20px;
+         padding-bottom: 30px;
      }
      .info{
          margin-bottom: 10px;
@@ -805,6 +800,54 @@ footer .col-sm-4 li{
     .projects{
         margin: 10px auto;
     }
+   
+    .navbar .navbar-nav{
+        padding-right: 0;
+    }
+   
+    .top-bar{
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        
+        
+    }
+    .about-us h2{
+        text-align: center;
+        margin: 20px;
+        font-size: 30px;
+        
+    }
+    .col-md-6 h1{
+        
+        margin: 1rem;
+        
+    }
+    .service-container{
+        padding: 20px 30px;   
+       
+    }
+    .service-intro h1{
+        font-size: 28px;
+        
+    }
+    .service-container .col-lg-4{
+        margin-bottom: 20px;
+
+    }
+    .contact{
+        padding:50px;   
+    }
+    .contact-info{
+        width:100%;
+        padding: 30px 20px;
+        
+    }
+    .conti-box{
+        width: 100%;
+        grid-template-columns: 1fr;
+        
+   }
 }
     
 

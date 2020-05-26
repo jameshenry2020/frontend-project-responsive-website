@@ -12,12 +12,12 @@
 </head>
 <body>
     <div class="main-wrapper">
-    <div class="header-container">
-        <div class="top-bar">
+        
+            <div class="top-bar">
             eligance perfect interior Base in Nigeria... <span>excellent & affordable</span>
-        </div>
-         <div class="mx-auto nav-cont">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
                 <a class="navbar-brand" href="#">BrandLogo</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -41,8 +41,8 @@
                   </ul>
                   
                 </div>
-              </nav>
-         </div>
+            </div>
+        </nav> 
          <div class="top-contact">
              <div class="row">
                  <div class="col-md-3 cont-item b-right">
@@ -88,7 +88,7 @@
                  </div>
              </div>
          </div>
-    </div>
+    
     <section class="slideshow">
           <div class="slide-item">
               <img src="imgs/slide.jpg" alt="slide 1">
@@ -382,6 +382,7 @@
              </div>
 
     </section>
+    <!--testimony section begin-->
     <section class="testimony">
         <h1 class="text-center text-uppercase font-weight-bold py-3" style="color: #fff; font-family: 'Abril Fatface', cursive;">customers say</h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -486,8 +487,8 @@
     <script src="js/script.js"></script>  
     <script>
         window.addEventListener('scroll', function(){
-            var header=document.querySelector('.header-container');
-            header.classList.toggle('sticky', window.scrollY > 0);
+            var header=document.querySelector('.navbar');
+            header.classList.toggle('fixed-top', window.scrollY > 0);
            
             var slide=document.querySelector('.slideshow');
             slide.classList.toggle('slide-height', window.scrollY > 0);
